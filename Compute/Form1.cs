@@ -21,8 +21,24 @@ namespace Compute
         {
 
         }
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            /*
+            // 获取主屏幕的分辨率
+            int screenWidth = Screen.PrimaryScreen.Bounds.Width;
+            int screenHeight = Screen.PrimaryScreen.Bounds.Height;
 
-        private void label20_Click(object sender, EventArgs e)
+            // 计算窗体的大小（这里设置为屏幕宽高的一半）
+            int formWidth = screenWidth / 2;
+            int formHeight = screenHeight / 2;
+
+            // 设置窗体的大小
+            Width = formWidth;
+            Height = formHeight;
+            */
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }
