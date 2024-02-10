@@ -42,5 +42,25 @@ namespace Compute
         {
 
         }
+
+        private void label40_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label44_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label43_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label82_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

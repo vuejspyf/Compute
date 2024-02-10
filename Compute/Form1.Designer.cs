@@ -101,6 +101,64 @@ namespace Compute
             label21 = new System.Windows.Forms.Label();
             label24 = new System.Windows.Forms.Label();
             label25 = new System.Windows.Forms.Label();
+            label26 = new System.Windows.Forms.Label();
+            label28 = new System.Windows.Forms.Label();
+            label27 = new System.Windows.Forms.Label();
+            label29 = new System.Windows.Forms.Label();
+            label31 = new System.Windows.Forms.Label();
+            label33 = new System.Windows.Forms.Label();
+            label38 = new System.Windows.Forms.Label();
+            label37 = new System.Windows.Forms.Label();
+            label34 = new System.Windows.Forms.Label();
+            label32 = new System.Windows.Forms.Label();
+            label30 = new System.Windows.Forms.Label();
+            label36 = new System.Windows.Forms.Label();
+            label46 = new System.Windows.Forms.Label();
+            label45 = new System.Windows.Forms.Label();
+            label42 = new System.Windows.Forms.Label();
+            label40 = new System.Windows.Forms.Label();
+            label41 = new System.Windows.Forms.Label();
+            label44 = new System.Windows.Forms.Label();
+            label39 = new System.Windows.Forms.Label();
+            label43 = new System.Windows.Forms.Label();
+            label54 = new System.Windows.Forms.Label();
+            label49 = new System.Windows.Forms.Label();
+            label53 = new System.Windows.Forms.Label();
+            label52 = new System.Windows.Forms.Label();
+            label47 = new System.Windows.Forms.Label();
+            label48 = new System.Windows.Forms.Label();
+            label50 = new System.Windows.Forms.Label();
+            label51 = new System.Windows.Forms.Label();
+            label57 = new System.Windows.Forms.Label();
+            label60 = new System.Windows.Forms.Label();
+            label61 = new System.Windows.Forms.Label();
+            label59 = new System.Windows.Forms.Label();
+            label56 = new System.Windows.Forms.Label();
+            label58 = new System.Windows.Forms.Label();
+            label55 = new System.Windows.Forms.Label();
+            label62 = new System.Windows.Forms.Label();
+            label69 = new System.Windows.Forms.Label();
+            label68 = new System.Windows.Forms.Label();
+            label67 = new System.Windows.Forms.Label();
+            label66 = new System.Windows.Forms.Label();
+            label70 = new System.Windows.Forms.Label();
+            label65 = new System.Windows.Forms.Label();
+            label64 = new System.Windows.Forms.Label();
+            label63 = new System.Windows.Forms.Label();
+            label73 = new System.Windows.Forms.Label();
+            label71 = new System.Windows.Forms.Label();
+            label72 = new System.Windows.Forms.Label();
+            label74 = new System.Windows.Forms.Label();
+            label75 = new System.Windows.Forms.Label();
+            label35 = new System.Windows.Forms.Label();
+            label77 = new System.Windows.Forms.Label();
+            label76 = new System.Windows.Forms.Label();
+            label78 = new System.Windows.Forms.Label();
+            label79 = new System.Windows.Forms.Label();
+            label81 = new System.Windows.Forms.Label();
+            label80 = new System.Windows.Forms.Label();
+            label83 = new System.Windows.Forms.Label();
+            label82 = new System.Windows.Forms.Label();
             tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown2).BeginInit();
@@ -152,7 +210,7 @@ namespace Compute
             // tableLayoutPanel1
             // 
             tableLayoutPanel1.ColumnCount = 8;
-            tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.9700584F));
+            tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.97006F));
             tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.9700584F));
             tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.9700584F));
             tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.9700584F));
@@ -231,28 +289,91 @@ namespace Compute
             tableLayoutPanel1.Controls.Add(label21, 5, 0);
             tableLayoutPanel1.Controls.Add(label24, 4, 6);
             tableLayoutPanel1.Controls.Add(label25, 4, 3);
+            tableLayoutPanel1.Controls.Add(label26, 4, 7);
+            tableLayoutPanel1.Controls.Add(label28, 5, 8);
+            tableLayoutPanel1.Controls.Add(label27, 5, 4);
+            tableLayoutPanel1.Controls.Add(label29, 5, 9);
+            tableLayoutPanel1.Controls.Add(label31, 6, 2);
+            tableLayoutPanel1.Controls.Add(label33, 4, 5);
+            tableLayoutPanel1.Controls.Add(label38, 4, 10);
+            tableLayoutPanel1.Controls.Add(label37, 4, 15);
+            tableLayoutPanel1.Controls.Add(label34, 4, 13);
+            tableLayoutPanel1.Controls.Add(label32, 4, 11);
+            tableLayoutPanel1.Controls.Add(label30, 5, 6);
+            tableLayoutPanel1.Controls.Add(label36, 4, 14);
+            tableLayoutPanel1.Controls.Add(label46, 5, 12);
+            tableLayoutPanel1.Controls.Add(label45, 5, 11);
+            tableLayoutPanel1.Controls.Add(label42, 4, 12);
+            tableLayoutPanel1.Controls.Add(label40, 4, 9);
+            tableLayoutPanel1.Controls.Add(label41, 4, 8);
+            tableLayoutPanel1.Controls.Add(label44, 4, 4);
+            tableLayoutPanel1.Controls.Add(label39, 4, 2);
+            tableLayoutPanel1.Controls.Add(label43, 4, 1);
+            tableLayoutPanel1.Controls.Add(label54, 5, 1);
+            tableLayoutPanel1.Controls.Add(label49, 5, 2);
+            tableLayoutPanel1.Controls.Add(label53, 5, 10);
+            tableLayoutPanel1.Controls.Add(label52, 5, 7);
+            tableLayoutPanel1.Controls.Add(label47, 5, 5);
+            tableLayoutPanel1.Controls.Add(label48, 5, 3);
+            tableLayoutPanel1.Controls.Add(label50, 6, 1);
+            tableLayoutPanel1.Controls.Add(label51, 6, 3);
+            tableLayoutPanel1.Controls.Add(label57, 5, 14);
+            tableLayoutPanel1.Controls.Add(label60, 5, 13);
+            tableLayoutPanel1.Controls.Add(label61, 5, 15);
+            tableLayoutPanel1.Controls.Add(label59, 6, 4);
+            tableLayoutPanel1.Controls.Add(label56, 6, 5);
+            tableLayoutPanel1.Controls.Add(label58, 6, 6);
+            tableLayoutPanel1.Controls.Add(label55, 6, 8);
+            tableLayoutPanel1.Controls.Add(label62, 6, 7);
+            tableLayoutPanel1.Controls.Add(label69, 6, 9);
+            tableLayoutPanel1.Controls.Add(label68, 6, 10);
+            tableLayoutPanel1.Controls.Add(label67, 6, 11);
+            tableLayoutPanel1.Controls.Add(label66, 6, 12);
+            tableLayoutPanel1.Controls.Add(label70, 6, 13);
+            tableLayoutPanel1.Controls.Add(label65, 6, 14);
+            tableLayoutPanel1.Controls.Add(label64, 6, 15);
+            tableLayoutPanel1.Controls.Add(label63, 7, 7);
+            tableLayoutPanel1.Controls.Add(label73, 7, 6);
+            tableLayoutPanel1.Controls.Add(label71, 7, 5);
+            tableLayoutPanel1.Controls.Add(label72, 7, 3);
+            tableLayoutPanel1.Controls.Add(label74, 7, 2);
+            tableLayoutPanel1.Controls.Add(label75, 7, 1);
+            tableLayoutPanel1.Controls.Add(label35, 7, 4);
+            tableLayoutPanel1.Controls.Add(label77, 7, 8);
+            tableLayoutPanel1.Controls.Add(label76, 7, 9);
+            tableLayoutPanel1.Controls.Add(label78, 7, 10);
+            tableLayoutPanel1.Controls.Add(label79, 7, 11);
+            tableLayoutPanel1.Controls.Add(label81, 7, 12);
+            tableLayoutPanel1.Controls.Add(label80, 7, 13);
+            tableLayoutPanel1.Controls.Add(label83, 7, 15);
+            tableLayoutPanel1.Controls.Add(label82, 7, 14);
             tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 18;
-            tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.97593355F));
-            tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.975934F));
-            tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.975934F));
-            tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.975934F));
-            tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.545866F));
-            tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.545866F));
-            tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.545866F));
-            tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.545866F));
-            tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.545866F));
-            tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.545866F));
-            tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.545866F));
-            tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.545866F));
-            tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.545866F));
-            tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.545866F));
-            tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.545866F));
-            tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.545866F));
-            tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.545866F));
+            tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.9759326F));
+            tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.9759326F));
+            tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.9759326F));
+            tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.9759326F));
+            tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.545865F));
+            tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.545865F));
+            tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.545865F));
+            tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.545865F));
+            tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.545865F));
+            tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.545865F));
+            tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.545865F));
+            tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.545865F));
+            tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.545865F));
+            tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.545865F));
+            tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.545865F));
+            tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.545865F));
+            tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.545865F));
             tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             tableLayoutPanel1.Size = new System.Drawing.Size(1415, 628);
             tableLayoutPanel1.TabIndex = 2;
             tableLayoutPanel1.Paint += tableLayoutPanel1_Paint;
@@ -901,6 +1022,7 @@ namespace Compute
             label16.Size = new System.Drawing.Size(174, 43);
             label16.TabIndex = 60;
             label16.Text = "购进品规数量";
+            label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label19
             // 
@@ -916,11 +1038,12 @@ namespace Compute
             // 
             // label23
             // 
+            label23.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             label23.AutoSize = true;
             label23.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             label23.Location = new System.Drawing.Point(1083, 0);
             label23.Name = "label23";
-            label23.Size = new System.Drawing.Size(206, 31);
+            label23.Size = new System.Drawing.Size(206, 43);
             label23.TabIndex = 69;
             label23.Text = "购进品规数量得分";
             label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -939,11 +1062,12 @@ namespace Compute
             // 
             // label21
             // 
+            label21.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             label21.AutoSize = true;
             label21.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             label21.Location = new System.Drawing.Point(903, 0);
             label21.Name = "label21";
-            label21.Size = new System.Drawing.Size(158, 31);
+            label21.Size = new System.Drawing.Size(174, 43);
             label21.TabIndex = 67;
             label21.Text = "购进金额得分";
             label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -957,7 +1081,7 @@ namespace Compute
             label24.Name = "label24";
             label24.Size = new System.Drawing.Size(174, 34);
             label24.TabIndex = 71;
-            label24.Text = "购进数量得分";
+            label24.Text = "0";
             label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label25
@@ -969,8 +1093,708 @@ namespace Compute
             label25.Name = "label25";
             label25.Size = new System.Drawing.Size(174, 43);
             label25.TabIndex = 72;
-            label25.Text = "购进数量得分";
+            label25.Text = "0";
             label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label26
+            // 
+            label26.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            label26.AutoSize = true;
+            label26.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label26.Location = new System.Drawing.Point(723, 274);
+            label26.Name = "label26";
+            label26.Size = new System.Drawing.Size(174, 34);
+            label26.TabIndex = 73;
+            label26.Text = "0";
+            label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label28
+            // 
+            label28.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            label28.AutoSize = true;
+            label28.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label28.Location = new System.Drawing.Point(903, 308);
+            label28.Name = "label28";
+            label28.Size = new System.Drawing.Size(174, 34);
+            label28.TabIndex = 75;
+            label28.Text = "0";
+            label28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label27
+            // 
+            label27.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            label27.AutoSize = true;
+            label27.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label27.Location = new System.Drawing.Point(903, 172);
+            label27.Name = "label27";
+            label27.Size = new System.Drawing.Size(174, 34);
+            label27.TabIndex = 74;
+            label27.Text = "0";
+            label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label29
+            // 
+            label29.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            label29.AutoSize = true;
+            label29.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label29.Location = new System.Drawing.Point(903, 342);
+            label29.Name = "label29";
+            label29.Size = new System.Drawing.Size(174, 34);
+            label29.TabIndex = 76;
+            label29.Text = "0";
+            label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label31
+            // 
+            label31.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            label31.AutoSize = true;
+            label31.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label31.Location = new System.Drawing.Point(1083, 86);
+            label31.Name = "label31";
+            label31.Size = new System.Drawing.Size(206, 43);
+            label31.TabIndex = 78;
+            label31.Text = "0";
+            label31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label33
+            // 
+            label33.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            label33.AutoSize = true;
+            label33.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label33.Location = new System.Drawing.Point(723, 206);
+            label33.Name = "label33";
+            label33.Size = new System.Drawing.Size(174, 34);
+            label33.TabIndex = 80;
+            label33.Text = "0";
+            label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label38
+            // 
+            label38.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            label38.AutoSize = true;
+            label38.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label38.Location = new System.Drawing.Point(723, 376);
+            label38.Name = "label38";
+            label38.Size = new System.Drawing.Size(174, 34);
+            label38.TabIndex = 85;
+            label38.Text = "0";
+            label38.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label37
+            // 
+            label37.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            label37.AutoSize = true;
+            label37.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label37.Location = new System.Drawing.Point(723, 546);
+            label37.Name = "label37";
+            label37.Size = new System.Drawing.Size(174, 34);
+            label37.TabIndex = 84;
+            label37.Text = "0";
+            label37.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label34
+            // 
+            label34.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            label34.AutoSize = true;
+            label34.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label34.Location = new System.Drawing.Point(723, 478);
+            label34.Name = "label34";
+            label34.Size = new System.Drawing.Size(174, 34);
+            label34.TabIndex = 81;
+            label34.Text = "0";
+            label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label32
+            // 
+            label32.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            label32.AutoSize = true;
+            label32.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label32.Location = new System.Drawing.Point(723, 410);
+            label32.Name = "label32";
+            label32.Size = new System.Drawing.Size(174, 34);
+            label32.TabIndex = 79;
+            label32.Text = "0";
+            label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label30
+            // 
+            label30.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            label30.AutoSize = true;
+            label30.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label30.Location = new System.Drawing.Point(903, 240);
+            label30.Name = "label30";
+            label30.Size = new System.Drawing.Size(174, 34);
+            label30.TabIndex = 77;
+            label30.Text = "0";
+            label30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label36
+            // 
+            label36.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            label36.AutoSize = true;
+            label36.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label36.Location = new System.Drawing.Point(723, 512);
+            label36.Name = "label36";
+            label36.Size = new System.Drawing.Size(174, 34);
+            label36.TabIndex = 83;
+            label36.Text = "0";
+            label36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label46
+            // 
+            label46.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            label46.AutoSize = true;
+            label46.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label46.Location = new System.Drawing.Point(903, 444);
+            label46.Name = "label46";
+            label46.Size = new System.Drawing.Size(174, 34);
+            label46.TabIndex = 93;
+            label46.Text = "0";
+            label46.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label45
+            // 
+            label45.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            label45.AutoSize = true;
+            label45.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label45.Location = new System.Drawing.Point(903, 410);
+            label45.Name = "label45";
+            label45.Size = new System.Drawing.Size(174, 34);
+            label45.TabIndex = 92;
+            label45.Text = "0";
+            label45.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label42
+            // 
+            label42.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            label42.AutoSize = true;
+            label42.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label42.Location = new System.Drawing.Point(723, 444);
+            label42.Name = "label42";
+            label42.Size = new System.Drawing.Size(174, 34);
+            label42.TabIndex = 89;
+            label42.Text = "0";
+            label42.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label40
+            // 
+            label40.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            label40.AutoSize = true;
+            label40.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label40.Location = new System.Drawing.Point(723, 342);
+            label40.Name = "label40";
+            label40.Size = new System.Drawing.Size(174, 34);
+            label40.TabIndex = 87;
+            label40.Text = "0";
+            label40.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            label40.Click += label40_Click;
+            // 
+            // label41
+            // 
+            label41.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            label41.AutoSize = true;
+            label41.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label41.Location = new System.Drawing.Point(723, 308);
+            label41.Name = "label41";
+            label41.Size = new System.Drawing.Size(174, 34);
+            label41.TabIndex = 88;
+            label41.Text = "0";
+            label41.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label44
+            // 
+            label44.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            label44.AutoSize = true;
+            label44.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label44.Location = new System.Drawing.Point(723, 172);
+            label44.Name = "label44";
+            label44.Size = new System.Drawing.Size(174, 34);
+            label44.TabIndex = 91;
+            label44.Text = "0";
+            label44.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            label44.Click += label44_Click;
+            // 
+            // label39
+            // 
+            label39.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            label39.AutoSize = true;
+            label39.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label39.Location = new System.Drawing.Point(723, 86);
+            label39.Name = "label39";
+            label39.Size = new System.Drawing.Size(174, 43);
+            label39.TabIndex = 86;
+            label39.Text = "0";
+            label39.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label43
+            // 
+            label43.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            label43.AutoSize = true;
+            label43.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label43.Location = new System.Drawing.Point(723, 43);
+            label43.Name = "label43";
+            label43.Size = new System.Drawing.Size(174, 43);
+            label43.TabIndex = 90;
+            label43.Text = "0";
+            label43.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            label43.Click += label43_Click;
+            // 
+            // label54
+            // 
+            label54.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            label54.AutoSize = true;
+            label54.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label54.Location = new System.Drawing.Point(903, 43);
+            label54.Name = "label54";
+            label54.Size = new System.Drawing.Size(174, 43);
+            label54.TabIndex = 101;
+            label54.Text = "0";
+            label54.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label49
+            // 
+            label49.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            label49.AutoSize = true;
+            label49.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label49.Location = new System.Drawing.Point(903, 86);
+            label49.Name = "label49";
+            label49.Size = new System.Drawing.Size(174, 43);
+            label49.TabIndex = 96;
+            label49.Text = "0";
+            label49.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label53
+            // 
+            label53.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            label53.AutoSize = true;
+            label53.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label53.Location = new System.Drawing.Point(903, 376);
+            label53.Name = "label53";
+            label53.Size = new System.Drawing.Size(174, 34);
+            label53.TabIndex = 100;
+            label53.Text = "0";
+            label53.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label52
+            // 
+            label52.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            label52.AutoSize = true;
+            label52.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label52.Location = new System.Drawing.Point(903, 274);
+            label52.Name = "label52";
+            label52.Size = new System.Drawing.Size(174, 34);
+            label52.TabIndex = 99;
+            label52.Text = "0";
+            label52.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label47
+            // 
+            label47.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            label47.AutoSize = true;
+            label47.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label47.Location = new System.Drawing.Point(903, 206);
+            label47.Name = "label47";
+            label47.Size = new System.Drawing.Size(174, 34);
+            label47.TabIndex = 94;
+            label47.Text = "0";
+            label47.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label48
+            // 
+            label48.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            label48.AutoSize = true;
+            label48.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label48.Location = new System.Drawing.Point(903, 129);
+            label48.Name = "label48";
+            label48.Size = new System.Drawing.Size(174, 43);
+            label48.TabIndex = 95;
+            label48.Text = "0";
+            label48.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label50
+            // 
+            label50.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            label50.AutoSize = true;
+            label50.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label50.Location = new System.Drawing.Point(1083, 43);
+            label50.Name = "label50";
+            label50.Size = new System.Drawing.Size(206, 43);
+            label50.TabIndex = 97;
+            label50.Text = "0";
+            label50.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label51
+            // 
+            label51.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            label51.AutoSize = true;
+            label51.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label51.Location = new System.Drawing.Point(1083, 129);
+            label51.Name = "label51";
+            label51.Size = new System.Drawing.Size(206, 43);
+            label51.TabIndex = 98;
+            label51.Text = "0";
+            label51.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label57
+            // 
+            label57.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            label57.AutoSize = true;
+            label57.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label57.Location = new System.Drawing.Point(903, 512);
+            label57.Name = "label57";
+            label57.Size = new System.Drawing.Size(174, 34);
+            label57.TabIndex = 104;
+            label57.Text = "0";
+            label57.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label60
+            // 
+            label60.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            label60.AutoSize = true;
+            label60.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label60.Location = new System.Drawing.Point(903, 478);
+            label60.Name = "label60";
+            label60.Size = new System.Drawing.Size(174, 34);
+            label60.TabIndex = 107;
+            label60.Text = "0";
+            label60.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label61
+            // 
+            label61.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            label61.AutoSize = true;
+            label61.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label61.Location = new System.Drawing.Point(903, 546);
+            label61.Name = "label61";
+            label61.Size = new System.Drawing.Size(174, 34);
+            label61.TabIndex = 108;
+            label61.Text = "0";
+            label61.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label59
+            // 
+            label59.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            label59.AutoSize = true;
+            label59.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label59.Location = new System.Drawing.Point(1083, 172);
+            label59.Name = "label59";
+            label59.Size = new System.Drawing.Size(206, 34);
+            label59.TabIndex = 106;
+            label59.Text = "0";
+            label59.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label56
+            // 
+            label56.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            label56.AutoSize = true;
+            label56.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label56.Location = new System.Drawing.Point(1083, 206);
+            label56.Name = "label56";
+            label56.Size = new System.Drawing.Size(206, 34);
+            label56.TabIndex = 103;
+            label56.Text = "0";
+            label56.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label58
+            // 
+            label58.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            label58.AutoSize = true;
+            label58.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label58.Location = new System.Drawing.Point(1083, 240);
+            label58.Name = "label58";
+            label58.Size = new System.Drawing.Size(206, 34);
+            label58.TabIndex = 105;
+            label58.Text = "0";
+            label58.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label55
+            // 
+            label55.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            label55.AutoSize = true;
+            label55.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label55.Location = new System.Drawing.Point(1083, 308);
+            label55.Name = "label55";
+            label55.Size = new System.Drawing.Size(206, 34);
+            label55.TabIndex = 102;
+            label55.Text = "0";
+            label55.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label62
+            // 
+            label62.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            label62.AutoSize = true;
+            label62.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label62.Location = new System.Drawing.Point(1083, 274);
+            label62.Name = "label62";
+            label62.Size = new System.Drawing.Size(206, 34);
+            label62.TabIndex = 109;
+            label62.Text = "0";
+            label62.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label69
+            // 
+            label69.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            label69.AutoSize = true;
+            label69.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label69.Location = new System.Drawing.Point(1083, 342);
+            label69.Name = "label69";
+            label69.Size = new System.Drawing.Size(206, 34);
+            label69.TabIndex = 116;
+            label69.Text = "0";
+            label69.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label68
+            // 
+            label68.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            label68.AutoSize = true;
+            label68.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label68.Location = new System.Drawing.Point(1083, 376);
+            label68.Name = "label68";
+            label68.Size = new System.Drawing.Size(206, 34);
+            label68.TabIndex = 115;
+            label68.Text = "0";
+            label68.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label67
+            // 
+            label67.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            label67.AutoSize = true;
+            label67.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label67.Location = new System.Drawing.Point(1083, 410);
+            label67.Name = "label67";
+            label67.Size = new System.Drawing.Size(206, 34);
+            label67.TabIndex = 114;
+            label67.Text = "0";
+            label67.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label66
+            // 
+            label66.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            label66.AutoSize = true;
+            label66.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label66.Location = new System.Drawing.Point(1083, 444);
+            label66.Name = "label66";
+            label66.Size = new System.Drawing.Size(206, 34);
+            label66.TabIndex = 113;
+            label66.Text = "0";
+            label66.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label70
+            // 
+            label70.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            label70.AutoSize = true;
+            label70.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label70.Location = new System.Drawing.Point(1083, 478);
+            label70.Name = "label70";
+            label70.Size = new System.Drawing.Size(206, 34);
+            label70.TabIndex = 117;
+            label70.Text = "0";
+            label70.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label65
+            // 
+            label65.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            label65.AutoSize = true;
+            label65.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label65.Location = new System.Drawing.Point(1083, 512);
+            label65.Name = "label65";
+            label65.Size = new System.Drawing.Size(206, 34);
+            label65.TabIndex = 112;
+            label65.Text = "0";
+            label65.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label64
+            // 
+            label64.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            label64.AutoSize = true;
+            label64.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label64.Location = new System.Drawing.Point(1083, 546);
+            label64.Name = "label64";
+            label64.Size = new System.Drawing.Size(206, 34);
+            label64.TabIndex = 111;
+            label64.Text = "0";
+            label64.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label63
+            // 
+            label63.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            label63.AutoSize = true;
+            label63.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label63.Location = new System.Drawing.Point(1295, 274);
+            label63.Name = "label63";
+            label63.Size = new System.Drawing.Size(117, 34);
+            label63.TabIndex = 110;
+            label63.Text = "0";
+            label63.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label73
+            // 
+            label73.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            label73.AutoSize = true;
+            label73.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label73.Location = new System.Drawing.Point(1295, 240);
+            label73.Name = "label73";
+            label73.Size = new System.Drawing.Size(117, 34);
+            label73.TabIndex = 120;
+            label73.Text = "0";
+            label73.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label71
+            // 
+            label71.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            label71.AutoSize = true;
+            label71.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label71.Location = new System.Drawing.Point(1295, 206);
+            label71.Name = "label71";
+            label71.Size = new System.Drawing.Size(117, 34);
+            label71.TabIndex = 118;
+            label71.Text = "0";
+            label71.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label72
+            // 
+            label72.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            label72.AutoSize = true;
+            label72.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label72.Location = new System.Drawing.Point(1295, 129);
+            label72.Name = "label72";
+            label72.Size = new System.Drawing.Size(117, 43);
+            label72.TabIndex = 119;
+            label72.Text = "0";
+            label72.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label74
+            // 
+            label74.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            label74.AutoSize = true;
+            label74.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label74.Location = new System.Drawing.Point(1295, 86);
+            label74.Name = "label74";
+            label74.Size = new System.Drawing.Size(117, 43);
+            label74.TabIndex = 121;
+            label74.Text = "0";
+            label74.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label75
+            // 
+            label75.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            label75.AutoSize = true;
+            label75.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label75.Location = new System.Drawing.Point(1295, 43);
+            label75.Name = "label75";
+            label75.Size = new System.Drawing.Size(117, 43);
+            label75.TabIndex = 122;
+            label75.Text = "0";
+            label75.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label35
+            // 
+            label35.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            label35.AutoSize = true;
+            label35.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label35.Location = new System.Drawing.Point(1295, 172);
+            label35.Name = "label35";
+            label35.Size = new System.Drawing.Size(117, 34);
+            label35.TabIndex = 123;
+            label35.Text = "0";
+            label35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label77
+            // 
+            label77.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            label77.AutoSize = true;
+            label77.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label77.Location = new System.Drawing.Point(1295, 308);
+            label77.Name = "label77";
+            label77.Size = new System.Drawing.Size(117, 34);
+            label77.TabIndex = 125;
+            label77.Text = "0";
+            label77.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label76
+            // 
+            label76.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            label76.AutoSize = true;
+            label76.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label76.Location = new System.Drawing.Point(1295, 342);
+            label76.Name = "label76";
+            label76.Size = new System.Drawing.Size(117, 34);
+            label76.TabIndex = 124;
+            label76.Text = "0";
+            label76.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label78
+            // 
+            label78.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            label78.AutoSize = true;
+            label78.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label78.Location = new System.Drawing.Point(1295, 376);
+            label78.Name = "label78";
+            label78.Size = new System.Drawing.Size(117, 34);
+            label78.TabIndex = 126;
+            label78.Text = "0";
+            label78.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label79
+            // 
+            label79.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            label79.AutoSize = true;
+            label79.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label79.Location = new System.Drawing.Point(1295, 410);
+            label79.Name = "label79";
+            label79.Size = new System.Drawing.Size(117, 34);
+            label79.TabIndex = 127;
+            label79.Text = "0";
+            label79.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label81
+            // 
+            label81.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            label81.AutoSize = true;
+            label81.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label81.Location = new System.Drawing.Point(1295, 444);
+            label81.Name = "label81";
+            label81.Size = new System.Drawing.Size(117, 34);
+            label81.TabIndex = 129;
+            label81.Text = "0";
+            label81.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label80
+            // 
+            label80.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            label80.AutoSize = true;
+            label80.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label80.Location = new System.Drawing.Point(1295, 478);
+            label80.Name = "label80";
+            label80.Size = new System.Drawing.Size(117, 34);
+            label80.TabIndex = 128;
+            label80.Text = "0";
+            label80.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label83
+            // 
+            label83.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            label83.AutoSize = true;
+            label83.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label83.Location = new System.Drawing.Point(1295, 546);
+            label83.Name = "label83";
+            label83.Size = new System.Drawing.Size(117, 34);
+            label83.TabIndex = 131;
+            label83.Text = "0";
+            label83.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label82
+            // 
+            label82.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            label82.AutoSize = true;
+            label82.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label82.Location = new System.Drawing.Point(1295, 512);
+            label82.Name = "label82";
+            label82.Size = new System.Drawing.Size(117, 34);
+            label82.TabIndex = 130;
+            label82.Text = "0";
+            label82.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            label82.Click += label82_Click;
             // 
             // Form1
             // 
@@ -1106,6 +1930,64 @@ namespace Compute
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label73;
+        private System.Windows.Forms.Label label72;
+        private System.Windows.Forms.Label label71;
+        private System.Windows.Forms.Label label70;
+        private System.Windows.Forms.Label label69;
+        private System.Windows.Forms.Label label68;
+        private System.Windows.Forms.Label label67;
+        private System.Windows.Forms.Label label66;
+        private System.Windows.Forms.Label label65;
+        private System.Windows.Forms.Label label64;
+        private System.Windows.Forms.Label label63;
+        private System.Windows.Forms.Label label62;
+        private System.Windows.Forms.Label label61;
+        private System.Windows.Forms.Label label60;
+        private System.Windows.Forms.Label label59;
+        private System.Windows.Forms.Label label58;
+        private System.Windows.Forms.Label label57;
+        private System.Windows.Forms.Label label56;
+        private System.Windows.Forms.Label label55;
+        private System.Windows.Forms.Label label54;
+        private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.Label label51;
+        private System.Windows.Forms.Label label50;
+        private System.Windows.Forms.Label label49;
+        private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label label75;
+        private System.Windows.Forms.Label label74;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label label79;
+        private System.Windows.Forms.Label label78;
+        private System.Windows.Forms.Label label77;
+        private System.Windows.Forms.Label label76;
+        private System.Windows.Forms.Label label83;
+        private System.Windows.Forms.Label label82;
+        private System.Windows.Forms.Label label81;
+        private System.Windows.Forms.Label label80;
     }
 }
 
