@@ -1,8 +1,14 @@
-﻿using System;
+﻿using NPOI.HPSF;
+using NPOI.HSSF.UserModel;
+using NPOI.SS.Formula.Functions;
+using NPOI.SS.UserModel;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -86,29 +92,164 @@ namespace Compute
 
         private void button3_Click(object sender, EventArgs e)
         {
-            return;
-            // 复制第一行的控件
-            List<Control> firstRowControls = new List<Control>();
-            for (int col = 0; col < tableLayoutPanel1.ColumnCount; col++)
+            DataTable tblDatas = new DataTable("Datas");
+            DataColumn dc = null;
+
+            dc = tblDatas.Columns.Add("次数", Type.GetType("System.String"));
+            for (int col = 1; col < tableLayoutPanel1.ColumnCount; col++)
             {
-                var control = tableLayoutPanel1.GetControlFromPosition(col, 1);
-                if (control != null)
+                dc = tblDatas.Columns.Add( ((Label)tableLayoutPanel1.GetControlFromPosition(col, 0 )).Text, Type.GetType("System.Decimal")); 
+              
+            }
+
+            for (int row = 1; row < tableLayoutPanel1.RowCount - 1; row++)
+            {
+                decimal inAmountScore = 0;
+                decimal inGoalScore = 0;
+                decimal inSpecAmountScore = 0;
+                DataRow newRow;
+                newRow = tblDatas.NewRow();
+               
+                for (int col = 0; col < tableLayoutPanel1.ColumnCount; col++)
                 {
-                    Control newControl = CloneControl(control);
-                    firstRowControls.Add(newControl);
+
+                  
+                   
+                    var inputControl = tableLayoutPanel1.GetControlFromPosition(col, row);
+                    var outControl = tableLayoutPanel1.GetControlFromPosition(col + 3, row);
+                    if (inputControl != null)
+                    {
+                        if (inputControl is Label)
+                        {
+
+                            // 设置Label的值为103
+                            newRow[col] = ((Label)inputControl).Text;
+                        }
+                        else if (inputControl is NumericUpDown)
+                        {
+
+                            newRow[col] = ((NumericUpDown)inputControl).Value;
+                            // 设置NumericUpDown的值为103
+                            if (col == 1)
+                            {
+                                inAmountScore = ((((NumericUpDown)inputControl).Value) * Convert.ToDecimal(0.03));//写公式上去
+                                if (inAmountScore > 60)
+                                {
+                                    inAmountScore = 60;
+                                }
+                            }
+                            else if (col == 2)
+                            {
+                                inGoalScore = ((((NumericUpDown)inputControl).Value) * Convert.ToDecimal(0.000125));
+                                if (inGoalScore > 35)
+                                {
+                                    inGoalScore = 35;
+                                }
+                            }
+                            else if (col == 3)
+                            {
+                                inSpecAmountScore = ((((NumericUpDown)inputControl).Value) * Convert.ToDecimal(0.1));
+                                if (inSpecAmountScore > 5)
+                                {
+                                    inSpecAmountScore = 5;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                if (inAmountScore == 0 && inGoalScore == 0 && inSpecAmountScore == 0)
+                {
+                    //break;
+                }
+                
+                tblDatas.Rows.Add(newRow);
+            }
+            /*
+            dc = tblDatas.Columns.Add("ID", Type.GetType("System.Int32"));
+            dc.AutoIncrement = true;//自动增加
+            dc.AutoIncrementSeed = 1;//起始为1
+            dc.AutoIncrementStep = 1;//步长为1
+            dc.AllowDBNull = false;//
+
+            dc = tblDatas.Columns.Add("Product", Type.GetType("System.String"));
+            dc = tblDatas.Columns.Add("Version", Type.GetType("System.String"));
+            dc = tblDatas.Columns.Add("Description", Type.GetType("System.String"));
+
+
+            DataRow newRow;
+            newRow = tblDatas.NewRow();
+            newRow[1] = "大话西游";
+            newRow[2] = "2.0";
+            newRow[3] = "我很喜欢";
+            
+            tblDatas.Rows.Add(newRow);
+
+            newRow = tblDatas.NewRow();
+            newRow["Product"] = "梦幻西游";
+            newRow["Version"] = "3.0";
+            newRow["Description"] = "比大话更幼稚";
+            tblDatas.Rows.Add(newRow);
+            */
+
+            DataTable dtTable = tblDatas;
+            string sheetName = "导出数据";//设置工作簿的名称
+            IWorkbook wb = new HSSFWorkbook();//创建一个工作簿对象
+            ISheet sheet = string.IsNullOrEmpty(sheetName) ? wb.CreateSheet("sheet1") : wb.CreateSheet(sheetName);//设置工作簿，如果名称为空，则默认名称为sheet1
+            int rowIndex = 0;//默认行索引为0，也就是第一行
+          
+            if (dtTable.Columns.Count > 0)//如果工作表里有数据，也就是有列
+            {
+                IRow header = sheet.CreateRow(rowIndex);//创建第一行
+               
+                for (int i = 0; i < dtTable.Columns.Count; i++)//遍历所有列
+                {
+                    ICell cell = header.CreateCell(i);//创建单元格
+                    cell.SetCellValue(dtTable.Columns[i].ColumnName);//填充列名
+                    ICellStyle style = cell.CellStyle;
+                    style.Alignment = NPOI.SS.UserModel.HorizontalAlignment.Center;
+                    style.VerticalAlignment = VerticalAlignment.Center;
+                    cell.CellStyle = style;
                 }
             }
-
-            // 在最后一行后面添加一行
-            tableLayoutPanel1.RowCount++;
-            int newRow = tableLayoutPanel1.RowCount - 1;
-
-            for (int col = 0; col < tableLayoutPanel1.ColumnCount; col++)
+            //添加数据
+            if (dtTable.Rows.Count > 0)//如果有数据，也就是有行
             {
-                var control = firstRowControls[col];
-                Control newControl = CloneControl(control);
-                tableLayoutPanel1.Controls.Add(newControl, col, newRow);
+                for (int i = 0; i < dtTable.Rows.Count; i++)//遍历行
+                {
+                    rowIndex++;//行索引＋1
+                    IRow row = sheet.CreateRow(rowIndex);//创建行对象
+                    for (int j = 0; j < dtTable.Columns.Count; j++)//遍历行里面的每一列
+                    {
+                        ICell cell = row.CreateCell(j);//创建单元格
+                        cell.SetCellValue(dtTable.Rows[i][j].ToString());//将DataTable里的值添加到工作簿中
+                    }
+                }
             }
+            for (int i = 0; i < dtTable.Columns.Count; i++)
+            {
+                sheet.AutoSizeColumn(i);//自适应单元格大小
+            }
+            string  fileName = @"F:\AAAB.xlsx";
+            FolderBrowserDialog folder = new FolderBrowserDialog();
+            if (folder.ShowDialog() == DialogResult.OK)
+            {
+                fileName = folder.SelectedPath + "\\数据导出" + DateTime.Now.ToString("yyyyMMddHHmmss") + ".xlsx";
+                //RunAsAdmin(fileName);
+                using (FileStream fs = new FileStream(fileName, FileMode.Create, FileAccess.ReadWrite))//创建文件流
+                {
+                    wb.Write(fs);//把工作簿写入流
+                }
+                MessageBox.Show("导出成功");//提示导出成功
+            }
+          
+        }
+        public static void RunAsAdmin(string fileName)
+        {
+            ProcessStartInfo startInfo = new ProcessStartInfo(fileName);
+            startInfo.UseShellExecute = true;
+            startInfo.Verb = "runas";
+            Process.Start(startInfo);
         }
 
         private Control CloneControl(Control control)
@@ -146,7 +287,7 @@ namespace Compute
         {
 
             bool rowIsOk = true;
-            for (int row = 1; row < tableLayoutPanel1.RowCount - 3; row++)
+            for (int row = 1; row < tableLayoutPanel1.RowCount - 1; row++)
             {
                 if(rowIsOk==false)
                 {
@@ -186,7 +327,7 @@ namespace Compute
                     }
                     if(inSpecAmountScore==Convert.ToDecimal(0)&& inGoalScore== Convert.ToDecimal(0) && inAmountScore == Convert.ToDecimal(0)&&row<=7)
                     {
-                        MessageBox.Show("第" + (row ).ToString() + "行还没有输入数据\n最少输入7行数据才能计算");
+                        MessageBox.Show("第" + (row ).ToString() + "次还没有输入数据\n最少输入7次数据才能计算");
                         rowIsOk = false;
                         break;
                     }
@@ -198,7 +339,7 @@ namespace Compute
             {
                 return;
             }
-            for (int row = 1; row < tableLayoutPanel1.RowCount-3; row++)
+            for (int row = 1; row < tableLayoutPanel1.RowCount-1; row++)
             {
                 decimal inAmountScore = 0;
                 decimal inGoalScore = 0;

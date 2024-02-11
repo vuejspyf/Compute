@@ -7,4 +7,9 @@
 
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="DotNetCore.NPOI" Version="1.2.3" />
+    <PackageReference Include="NPOI" Version="2.6.2" />
+  </ItemGroup>
+
 </Project>
