@@ -86,6 +86,7 @@ namespace Compute
 
         private void button3_Click(object sender, EventArgs e)
         {
+            return;
             // 复制第一行的控件
             List<Control> firstRowControls = new List<Control>();
             for (int col = 0; col < tableLayoutPanel1.ColumnCount; col++)
@@ -143,36 +144,119 @@ namespace Compute
 
         private void button1_Click(object sender, EventArgs e)
         {
-            for (int row = 1; row < tableLayoutPanel1.RowCount-3; row++)
+
+            bool rowIsOk = true;
+            for (int row = 1; row < tableLayoutPanel1.RowCount - 3; row++)
             {
+                if(rowIsOk==false)
+                {
+                    break;
+                }
+                decimal inAmountScore = 0;
+                decimal inGoalScore = 0;
+                decimal inSpecAmountScore = 0;
                 for (int col = 1; col <= 3; col++)
                 {
-                    decimal inAmountScore = 0;
-                    decimal inGoalScore = 0;
-                    decimal inSpecAmountScore = 0;
-                    var control = tableLayoutPanel1.GetControlFromPosition(col, row);
-                    var control1 = tableLayoutPanel1.GetControlFromPosition(col+3, row);
-                    if (control != null)
+
+                    var inputControl = tableLayoutPanel1.GetControlFromPosition(col, row);
+                    var outControl = tableLayoutPanel1.GetControlFromPosition(col + 3, row);
+                    if (inputControl is Label)
                     {
 
-                        if (control is Label)
+                        // 设置Label的值为103
+                        // ((Label)control).Text = "103";
+                    }
+                    else if (inputControl is NumericUpDown)
+                    {
+                        // 设置NumericUpDown的值为103
+                        if (col == 1)
                         {
+                            inAmountScore = ((((NumericUpDown)inputControl).Value) * Convert.ToDecimal(0.03));//写公式上去
 
+                        }
+                        else if (col == 2)
+                        {
+                            inGoalScore = ((((NumericUpDown)inputControl).Value) * Convert.ToDecimal(0.000125));
+
+                        }
+                        else if (col == 3)
+                        {
+                            inSpecAmountScore = ((((NumericUpDown)inputControl).Value) * Convert.ToDecimal(0.1));
+                        }
+                    }
+                    if(inSpecAmountScore==Convert.ToDecimal(0)&& inGoalScore== Convert.ToDecimal(0) && inAmountScore == Convert.ToDecimal(0)&&row<=7)
+                    {
+                        MessageBox.Show("第" + (row ).ToString() + "行还没有输入数据\n最少输入7行数据才能计算");
+                        rowIsOk = false;
+                        break;
+                    }
+                }
+            }
+
+
+            if(rowIsOk==false)//必须最少输入7行才可以计算
+            {
+                return;
+            }
+            for (int row = 1; row < tableLayoutPanel1.RowCount-3; row++)
+            {
+                decimal inAmountScore = 0;
+                decimal inGoalScore = 0;
+                decimal inSpecAmountScore = 0;
+                for (int col = 1; col <= 3; col++)
+                {
+                   
+                    var inputControl = tableLayoutPanel1.GetControlFromPosition(col, row);
+                    var outControl = tableLayoutPanel1.GetControlFromPosition(col+3, row);
+                    if (inputControl != null)
+                    {
+                        if (inputControl is Label)
+                        {
 
                             // 设置Label的值为103
                            // ((Label)control).Text = "103";
                         }
-                        else if (control is NumericUpDown)
+                        else if (inputControl is NumericUpDown)
                         {
                             // 设置NumericUpDown的值为103
                             if (col == 1)
                             {
-                                ((Label)control1).Text = ((NumericUpDown)control).Value.ToString();//写公式上去
+                                inAmountScore = ((((NumericUpDown)inputControl).Value) * Convert.ToDecimal(0.03));//写公式上去
+                                if(inAmountScore>60)
+                                {
+                                    inAmountScore = 60;
+                                }
+                                ((Label)outControl).Text = inAmountScore.ToString();
+                            }else if(col == 2)
+                            {
+                                inGoalScore = ((((NumericUpDown)inputControl).Value) * Convert.ToDecimal(0.000125));
+                                if (inGoalScore > 35)
+                                {
+                                    inGoalScore = 35;
+                                }
+                                ((Label)outControl).Text =inGoalScore.ToString();//写公式上去
+                             }
+                            else if (col == 3)
+                            {
+                                inSpecAmountScore = ((((NumericUpDown)inputControl).Value) * Convert.ToDecimal(0.1));
+                                if (inSpecAmountScore > 5)
+                                {
+                                    inSpecAmountScore = 5;
+                                }
+                                ((Label)outControl).Text = inSpecAmountScore.ToString();//写公式上去
                             }
-                           
                         }
                     }
                 }
+                if(inAmountScore==0&&inGoalScore==0&&inSpecAmountScore==0)
+                {
+                    tableLayoutPanel1.GetControlFromPosition(4, row).Text="0";
+                    tableLayoutPanel1.GetControlFromPosition(5, row).Text = "0";
+                    tableLayoutPanel1.GetControlFromPosition(6, row).Text = "0";
+                    break;
+                }
+                var scoreControl = tableLayoutPanel1.GetControlFromPosition(7, row);
+                ((Label)scoreControl).Text = ((inAmountScore * Convert.ToDecimal(0.6) + inGoalScore * Convert.ToDecimal(0.35) + inSpecAmountScore * Convert.ToDecimal(0.05))/Convert.ToDecimal(row)).ToString();
             }
         }
     }
