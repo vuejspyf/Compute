@@ -95,26 +95,28 @@ namespace Compute
             DataTable tblDatas = new DataTable("Datas");
             DataColumn dc = null;
 
-            dc = tblDatas.Columns.Add("次数", Type.GetType("System.String"));
+            dc = tblDatas.Columns.Add("项目", Type.GetType("System.String"));
+            dc = tblDatas.Columns.Add("得分", Type.GetType("System.String"));
+            /*
             for (int col = 1; col < tableLayoutPanel1.ColumnCount; col++)
             {
                 dc = tblDatas.Columns.Add( ((Label)tableLayoutPanel1.GetControlFromPosition(col, 0 )).Text, Type.GetType("System.Decimal")); 
               
-            }
-
+            }*/
+            decimal rowCount = 0;
+            decimal[] inAmountScoreArr = new decimal[15];
+            decimal[] inGoalScoreArr = new decimal[15];
+            decimal[] inSpecAmountScoreArr = new decimal[15];
             for (int row = 1; row < tableLayoutPanel1.RowCount - 1; row++)
             {
                 decimal inAmountScore = 0;
                 decimal inGoalScore = 0;
                 decimal inSpecAmountScore = 0;
-                DataRow newRow;
-                newRow = tblDatas.NewRow();
+              //  DataRow newRow;
+              //  newRow = tblDatas.NewRow();
                
                 for (int col = 0; col < tableLayoutPanel1.ColumnCount; col++)
-                {
-
-                  
-                   
+                {             
                     var inputControl = tableLayoutPanel1.GetControlFromPosition(col, row);
                     var outControl = tableLayoutPanel1.GetControlFromPosition(col + 3, row);
                     if (inputControl != null)
@@ -123,12 +125,12 @@ namespace Compute
                         {
 
                             // 设置Label的值为103
-                            newRow[col] = ((Label)inputControl).Text;
+                            //newRow[col] = ((Label)inputControl).Text;
                         }
                         else if (inputControl is NumericUpDown)
                         {
 
-                            newRow[col] = ((NumericUpDown)inputControl).Value;
+                            //newRow[col] = ((NumericUpDown)inputControl).Value;
                             // 设置NumericUpDown的值为103
                             if (col == 1)
                             {
@@ -160,11 +162,38 @@ namespace Compute
 
                 if (inAmountScore == 0 && inGoalScore == 0 && inSpecAmountScore == 0)
                 {
-                    //break;
+                    break;
                 }
-                
-                tblDatas.Rows.Add(newRow);
+                rowCount++;
+                inAmountScoreArr[row - 1] = inAmountScore;
+                inGoalScoreArr[row - 1] = inGoalScore ;
+                inSpecAmountScoreArr[row - 1] = inSpecAmountScore;
+                //tblDatas.Rows.Add(newRow);
             }
+            if(rowCount==0)
+            {
+                MessageBox.Show("没有输入数据");
+                return;
+            }    
+            DataRow newRow;
+            newRow = tblDatas.NewRow();
+            newRow["项目"] = "平均购进条数";
+            newRow["得分"] = (inAmountScoreArr.Sum() / rowCount).ToString("0.0000");
+            tblDatas.Rows.Add(newRow);
+
+            newRow = tblDatas.NewRow();
+            newRow["项目"] = "平均购进金额";
+            newRow["得分"] = (inGoalScoreArr.Sum() / rowCount).ToString("0.0000");
+            tblDatas.Rows.Add(newRow);
+
+            newRow = tblDatas.NewRow();
+            newRow["项目"] = "平均购进品规";
+            newRow["得分"] = (inSpecAmountScoreArr.Sum() / rowCount).ToString("0.0000");
+            tblDatas.Rows.Add(newRow);
+            newRow = tblDatas.NewRow();
+            newRow["项目"] = "总分";
+            newRow["得分"] = (inSpecAmountScoreArr.Sum() / rowCount+ inGoalScoreArr.Sum() / rowCount+ inAmountScoreArr.Sum() / rowCount).ToString("0.0000");
+            tblDatas.Rows.Add(newRow);
             /*
             dc = tblDatas.Columns.Add("ID", Type.GetType("System.Int32"));
             dc.AutoIncrement = true;//自动增加
@@ -207,9 +236,16 @@ namespace Compute
                     ICell cell = header.CreateCell(i);//创建单元格
                     cell.SetCellValue(dtTable.Columns[i].ColumnName);//填充列名
                     ICellStyle style = cell.CellStyle;
+                   //style.WrapText = true;  
                     style.Alignment = NPOI.SS.UserModel.HorizontalAlignment.Center;
                     style.VerticalAlignment = VerticalAlignment.Center;
+                    IFont font = wb.CreateFont();
+                    font.FontName = "微软雅黑";
+                    font.IsBold = true;
+                    font.FontHeightInPoints = 42;
+                    style.SetFont(font);
                     cell.CellStyle = style;
+                    
                 }
             }
             //添加数据
@@ -244,6 +280,7 @@ namespace Compute
             }
           
         }
+
         public static void RunAsAdmin(string fileName)
         {
             ProcessStartInfo startInfo = new ProcessStartInfo(fileName);
@@ -339,6 +376,7 @@ namespace Compute
             {
                 return;
             }
+            decimal[] totalScoreArr = new decimal[15];
             for (int row = 1; row < tableLayoutPanel1.RowCount-1; row++)
             {
                 decimal inAmountScore = 0;
@@ -367,7 +405,7 @@ namespace Compute
                                 {
                                     inAmountScore = 60;
                                 }
-                                ((Label)outControl).Text = inAmountScore.ToString();
+                                ((Label)outControl).Text = inAmountScore.ToString("0.0000");
                             }else if(col == 2)
                             {
                                 inGoalScore = ((((NumericUpDown)inputControl).Value) * Convert.ToDecimal(0.000125));
@@ -375,7 +413,7 @@ namespace Compute
                                 {
                                     inGoalScore = 35;
                                 }
-                                ((Label)outControl).Text =inGoalScore.ToString();//写公式上去
+                                ((Label)outControl).Text =inGoalScore.ToString("0.0000");//写公式上去
                              }
                             else if (col == 3)
                             {
@@ -384,7 +422,7 @@ namespace Compute
                                 {
                                     inSpecAmountScore = 5;
                                 }
-                                ((Label)outControl).Text = inSpecAmountScore.ToString();//写公式上去
+                                ((Label)outControl).Text = inSpecAmountScore.ToString("0.0000");//写公式上去
                             }
                         }
                     }
@@ -397,7 +435,15 @@ namespace Compute
                     break;
                 }
                 var scoreControl = tableLayoutPanel1.GetControlFromPosition(7, row);
-                ((Label)scoreControl).Text = ((inAmountScore * Convert.ToDecimal(0.6) + inGoalScore * Convert.ToDecimal(0.35) + inSpecAmountScore * Convert.ToDecimal(0.05))/Convert.ToDecimal(row)).ToString();
+                decimal totalScore = (inAmountScore + inGoalScore + inSpecAmountScore);
+                decimal summary = 0;
+                totalScoreArr[row-1] =(totalScore);
+                for (global::System.Int32 i = 0; i < row; i++)
+                {
+                    summary += totalScoreArr[i];
+                }
+                ((Label)scoreControl).Text = (summary/row).ToString("0.0000");
+                
             }
         }
     }
